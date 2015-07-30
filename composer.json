@@ -1,0 +1,22 @@
+{
+  "name": "presprog/contao-tooltipster",
+  "description": "This Contao extension adds the tooltipster library to Contao. After installing the extension, simply add the j_tooltipster template to your page layout and start using Tooltipster.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "type": "contao-module",
+  "authors": [
+    {
+      "name": "Benedict Zinke . Present Progressive",
+      "email": "bz@presentprogressive.de",
+      "role": "Developer",
+      "homepage": "http://www.presentprogressive.de"
+    }
+  ],
+  "extra": {
+    "contao": {
+      "sources": {
+        "src": "system/modules/Tooltipster"
+      }
+    }
+  }
+}

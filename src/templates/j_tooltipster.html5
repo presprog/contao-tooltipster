@@ -1,0 +1,17 @@
+<?php
+
+// Add the tooltipster style sheet
+$GLOBALS['TL_CSS'][] = 'system/modules/Tooltipster/assets/tooltipster/'. J_TOOLTIPSTER .'/css/tooltipster.css||static';
+?>
+
+<?php if ($GLOBALS['TL_CONFIG']['debugMode']): ?>
+    <script src="system/modules/Tooltipster/assets/tooltipster/<?= J_TOOLTIPSTER ?>/js/jquery.tooltipster.js"></script>
+<?php else: ?>
+    <script src="system/modules/Tooltipster/assets/tooltipster/<?= J_TOOLTIPSTER ?>/js/jquery.tooltipster.min.js"></script>
+<?php endif; ?>
+
+<script>
+    $(document).ready(function() {
+        $('.tooltip').tooltipster();
+    });
+</script>
